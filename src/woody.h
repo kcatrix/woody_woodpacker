@@ -12,6 +12,7 @@
 #include <errno.h>
 #include <sys/mman.h>
 
+#define KEY_SIZE 16
 typedef struct s_woody
 {
     char        *file;
@@ -24,5 +25,6 @@ typedef struct s_woody
 
 void		error(char *s);
 char    	*cp_file(char *file, woody w);
+char        *generateKey(char *key);
 
 #endif

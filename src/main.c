@@ -7,5 +7,7 @@ int main(int ac, char **av)
 	woody w;
 	w.new = 0;
 	w.file = cp_file(av[1], w);
-	
+	char key[KEY_SIZE + 1];
+	generateKey(key);
+	printf("Key : %s\n", key);
 }
