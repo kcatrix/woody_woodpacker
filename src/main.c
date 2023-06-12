@@ -3,6 +3,7 @@
 int main(int ac, char **av)
 {
 	if (ac != 2)
-		return (1);
-	printf("%s\n", av[1]);
+		error("Usage : ./woody_woodpacker [FILE]");
+	woody w;
+	w.new = 0;
 }
