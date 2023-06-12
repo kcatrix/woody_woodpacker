@@ -6,6 +6,11 @@
 #include <string.h>
 #include <unistd.h>
 #include <elf.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <errno.h>
+#include <sys/mman.h>
 
 typedef struct s_woody
 {
@@ -18,5 +23,6 @@ typedef struct s_woody
 }               woody;
 
 void		error(char *s);
+char    	*cp_file(char *file, woody w);
 
 #endif

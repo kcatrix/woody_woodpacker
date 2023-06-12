@@ -6,4 +6,6 @@ int main(int ac, char **av)
 		error("Usage : ./woody_woodpacker [FILE]");
 	woody w;
 	w.new = 0;
+	w.file = cp_file(av[1], w);
+	
 }
